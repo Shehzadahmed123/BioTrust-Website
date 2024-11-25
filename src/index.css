@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, Helvetica Neue, sans-serif;
+}
+body{
+  background-color: #fff;
+}
+/* header section */
+.opacity:hover{
+  opacity: 0.7;
+}
+.font {
+  font-size: var(--font-size-siteheader-link-xsmall, 0.94375em) !important;
+}
+.text-size{
+  font-size: 0.94375rem;
+  letter-spacing: 1.5px
+}
+/* navbar section  */
+.navbar-toggler {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0d4f9a;
+}
+.navbar-brand {
+  margin: 0%;
+  width: 20%;
+}
+.navbar-brand img {
+  width: 75%;
+}
+
+.nav-item-bg-color {
+  background-color: #0d4f9a;
+  color: #fff;
+  padding: 15px;
+  cursor: pointer;
+}
+.nav-item-bg-color:hover {
+  color: #fff;
+}
+.menu-item-padding {
+  padding: 12px;
+}
+.text-color {
+  color: #0d4f9a;
+  font-size:15px;
+
+}
+.text-color:hover {
+  opacity: 0.7;
+  color: #0d4f9a;
+}
+
+.borderbottom {
+  border: 3px solid #0d4f9a;
+  background-color: #0d4f9a;
+}
+.flex {
+  display: flex;
+}
+ 
+/* price card section  */
+
+.buttons {
+  background-color: #fff;
+  width: 100%;
+  color: #0d4f9a;
+  border: 2px solid #0d4f9a;
+  padding: 8px 20px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+.buttons-2 {
+  background-color: #0d4f9a;
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 600;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+
+.card-border {
+  border: 2px solid #0d4f9a;
+  justify-content: space-between;
+}
+
+.font-title {
+  font-size: 34px;
+}
+.font-description {
+  font-size: 23px;
+}
+
+.imagecard {
+  width: 90%;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0d4f9a;
+}
+.card-description {
+  font-size: 23px;
+  font-weight: 500;
+  color: #0d4f9a;
+}
+.card-totalPrice {
+  font-size: 25px;
+  text-decoration: line-through;
+}
+.card-discountPrice {
+  font-size: 30px;
+  font-weight: 500;
+  color: #2bb34d;
+}
+.card-discounttext {
+  line-height: 20px;
+  font-size: 20px;
+  color: #eb2a2e !important;
+}
+.card-discountshipping {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* about page section */
+.paddingAboutPage {
+  padding: 30px 30px;
+}
+.HeadingText {
+  font-size: 28px;
+}
+
+/* claim section  */
+.claimcard-bg-color {
+  background-color: #003663;
+}
+
+.claimcard {
+  position: relative;
+  height: 140px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 35px;
+}
+.claimcard img {
+  position: absolute;
+  top: -25px;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+
+/* review section  */
+.review-bg-color {
+  background-color: #0d4f9a;
+  padding: 36px;
+}
+.review-paragraph-text {
+  cursor: pointer;
+  font-size: 1.3em;
+  color: #209a0d;
+  text-align: end;
+  padding-right: 30px;
+}
+.review-paragraph-text:hover {
+  opacity: 0.7;
+}
+.review-heading-text {
+  font-size: 3.5em;
+  font-weight: 700;
+
+  text-align: end;
+
+  padding-right: 30px;
+}
+.border-right {
+  border-right: 8px solid #209a0d;
+  height: 250px;
+}
+.review-stars {
+  color: #209a0d;
+}
+
+.review-description {
+  font-size: 1.5em;
+  margin-bottom: unset;
+  font-weight: 700;
+  padding-right: 35px;
+  padding-left: 55px;
+  text-align: CENTER;
+}
+
+@media (max-width: 576px) {
+  .cart {
+    display: none;
+  }
+  .paddingAboutPage {
+    padding: 20px 20px;
+  }
+  .HeadingText {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .icon-cart {
+    width: 20px;
+  }
+  .font-description {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .card-text {
+    width: 30%;
+    margin: 10px;
+  }
+  .review-heading-text {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-hide {
+    display: none;
+  }
+  .text-size {
+    font-size: 0.5rem;
+  }
+  .claimcard {
+    border: none;
+    margin-top: 20px;
+  }
+  .claimcard img {
+    top: 0px;
+  }
+  .review-heading-text {
+    font-size: 2.3em;
+    text-align: center;
+    padding-right: 0px;
+  }
+  .review-paragraph-text {
+    font-size: 1em;
+    text-align: center;
+    padding-right: 0px;
+  }
+  .border-right {
+    border: none;
+  }
+  .border-buttom {
+    border-bottom: 8px solid #209a0d;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .flex-large {
+    display: flex;
+  }
+  .main {
+    text-align: center;
+  }
+  .image {
+    display: none;
+  }
+  .review-heading-text {
+    font-size: 3em;
+  }
+}
+@media (max-width: 992px) {
+
+  /* navbar toggler  */
+  .collapse {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height all 0.9s ease-in-out;
+  }
+  .collapse.show {
+    max-height: 500px;
+  }
+  .navbar-brand {
+    margin: 0%;
+    width: 50%;
+  }
+  .nav-item-bg-color {
+    background: none;
+    color: #0d4f9a;
+    padding: 0%;
+  }
+  .nav-item-bg-color:hover {
+    color: #0d4f9a;
+  }
+  .nav-item-bg-color svg {
+    display: none;
+  }
+  .menu-item-padding {
+    padding: 0px;
+  }
+  review section  */
+  .review-paragraph-text {
+    font-size: 1.2em;
+  }
+  price card section  */
+  .card-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0d4f9a;
+  }
+  .card-desciption {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0d4f9a;
+  }
+  .card-totalPrice {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: line-through;
+  }
+  .card-discountPrice {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2bb34d;
+  }
+  .card-discounttext {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fa0a0a;
+  }
+  .card-discountshipping {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
